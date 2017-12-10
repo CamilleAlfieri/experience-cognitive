@@ -17,7 +17,7 @@ const client = {
 	name: 'client',
 	target: 'web',
 	devtool: 'eval-source-map',
-	entry: [clientEntry],
+	entry: ['babel-polyfill', clientEntry],
 	output: {
 		path: path.join(__dirname, './dist'),
 		filename: 'client.js',

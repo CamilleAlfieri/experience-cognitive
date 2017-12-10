@@ -7,9 +7,7 @@ const res = [{a:1},{a:2},{a:3}].find(
   }
 )
 
-res//?
-
-
+...res//?
 
 const a = (a) => (b) => (c) => a+b+c
 
