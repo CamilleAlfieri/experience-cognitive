@@ -34,9 +34,9 @@ export default class App extends Component {
 
           <MyRoute exact path="/" component={Home} inputValue={ this.state.inputValue }/>
           <MyRoute path="/about" component={About}/>
-          <MyRoute path="/topics" component={Topics}/>
+          <MyRoute path="/topics" component={Topics} test={'lol'} />
         </div>
       </BrowserRouter>
     )
-  }x
+  }
 }

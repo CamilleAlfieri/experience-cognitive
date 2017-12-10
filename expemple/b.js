@@ -1,3 +1,5 @@
-import { d } from './a'
+const withList = (options) => (component) => {
+  return options + component
+}
 
-d//?
+withList('coucou ')//?
