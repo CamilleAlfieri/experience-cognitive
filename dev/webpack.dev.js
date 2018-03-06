@@ -38,7 +38,7 @@ const server = {
 	name: 'server',
 	target: 'node',
 	devtool: 'eval-source-map',
-	entry: [serverEntry],
+	entry: ['babel-polyfill', serverEntry],
 	output: {
 		path: path.join(__dirname, './dist'),
 		filename: 'server.js',

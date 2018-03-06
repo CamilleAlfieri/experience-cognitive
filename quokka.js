@@ -1,14 +1,13 @@
-const res = [{a:1},{a:2},{a:3}].find(
-  (item)=>{
-    console.log(item)
-    console.log(item.a)
-    console.log(item.a === 3)
-    return item.a === 3
+const mangerBebe = (nom) => {
+  if(nom !== 'Michel'){
+    return mangerMaman()
   }
-)
+  console.log('Bebe mangé')
+  return 5
+}
 
-...res//?
+const mangerMaman = () => {
+  return 6
+}
 
-const a = (a) => (b) => (c) => a+b+c
-
-a(4)(5)(6)//?
+mangerBebe('Miche')//?
